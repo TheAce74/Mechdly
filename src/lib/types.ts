@@ -1,1 +1,1 @@
-export type ButtonVariants = "primary" | "inverted";
+export type ButtonVariants = "primary" | "secondary";

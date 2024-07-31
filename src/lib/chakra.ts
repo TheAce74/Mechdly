@@ -16,4 +16,8 @@ const colors = {
   },
 };
 
-export const theme = extendTheme({ colors });
+const fonts = {
+  body: "'Darker Grotesque', sans-serif",
+};
+
+export const theme = extendTheme({ colors, fonts });

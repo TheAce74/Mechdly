@@ -22,6 +22,9 @@ const config: Config = {
           400: "#673817",
         },
       },
+      borderRadius: {
+        pill: "100vmax",
+      },
     },
   },
   plugins: [],
