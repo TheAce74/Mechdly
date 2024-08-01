@@ -6,6 +6,7 @@ type LandingSectionProps = PropsWithChildren & {
   id: string;
   outerClass?: string;
   className?: string;
+  grid?: boolean;
 };
 
 export default function LandingSection({
@@ -13,6 +14,7 @@ export default function LandingSection({
   id,
   className,
   outerClass,
+  grid,
 }: LandingSectionProps) {
   return (
     <Box
@@ -25,7 +27,11 @@ export default function LandingSection({
       )}
     >
       <Box
-        className={cn("px-3 py-4 md:px-6 md:py-8 lg:px-16 lg:py-10", className)}
+        className={cn(
+          "px-3 py-4 md:px-6 md:py-8 lg:px-16 lg:py-10",
+          grid && "md:grid md:grid-cols-2 md:items-center md:gap-6",
+          className,
+        )}
       >
         {children}
       </Box>
