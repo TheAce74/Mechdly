@@ -14,7 +14,7 @@ export default function Header() {
     <Box
       as="header"
       bg="neutral.900"
-      className="flex-starter sticky top-0 isolate z-50 py-2 pl-3 pr-1 sm:px-3 sm:py-4 md:px-6 lg:px-8"
+      className="flex-starter sticky top-0 isolate z-50 py-2 pl-3 pr-1 sm:px-3 sm:py-4 md:px-6 lg:px-16"
       ref={clickAwayRef}
     >
       <Image src={logo} alt="logo" w={[100, 130]} />

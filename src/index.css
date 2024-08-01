@@ -11,3 +11,12 @@
     @apply flex items-center justify-between gap-4;
   }
 }
+
+/* scrollbar stuff */
+::-webkit-scrollbar {
+  @apply aspect-square w-2;
+}
+
+::-webkit-scrollbar-thumb {
+  @apply rounded-[100vmax] bg-primary-400;
+}
