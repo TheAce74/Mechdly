@@ -28,7 +28,7 @@ export default function LandingSection({
     >
       <Box
         className={cn(
-          "px-3 py-4 md:px-6 md:py-8 lg:px-16 lg:py-10",
+          "px-3 py-6 md:px-6 md:py-8 lg:px-16 lg:py-10",
           grid && "md:grid md:grid-cols-2 md:items-center md:gap-6",
           className,
         )}

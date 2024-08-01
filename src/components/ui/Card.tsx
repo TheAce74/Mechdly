@@ -17,7 +17,7 @@ export default function Card({
     <Box
       as="li"
       className={cn(
-        "glass rounded-lg border-2 border-primary-100 p-6 lg:p-10",
+        "glass border-primary-200 rounded-lg border-2 p-6 lg:p-10",
         className,
       )}
     >

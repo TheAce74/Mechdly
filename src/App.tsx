@@ -1,4 +1,5 @@
 import Availability from "@/components/ui/Availability";
+import Cta from "@/components/ui/Cta";
 import Header from "@/components/ui/Header";
 import Hero from "@/components/ui/Hero";
 import Reminders from "@/components/ui/Reminders";
@@ -15,6 +16,7 @@ function App() {
       <Reminders />
       <Services />
       <Testimonials />
+      <Cta />
     </Container>
   );
 }
