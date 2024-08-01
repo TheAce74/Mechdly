@@ -1,9 +1,11 @@
 import { CardType } from "@/lib/types";
 import { cn } from "@/lib/utils";
 import { Box, Heading, Image, Text } from "@chakra-ui/react";
+import { CSSProperties } from "react";
 
 type CardProps = CardType & {
   className?: string;
+  style?: CSSProperties;
 };
 
 export default function Card({
@@ -12,6 +14,7 @@ export default function Card({
   text,
   title,
   className,
+  style,
 }: CardProps) {
   return (
     <Box
@@ -20,6 +23,7 @@ export default function Card({
         "glass border-primary-200 rounded-lg border-2 p-6 lg:p-10",
         className,
       )}
+      style={style}
     >
       <Image
         src={image}

@@ -7,6 +7,8 @@ import reminders from "@/assets/reminders.svg";
 import scheduling from "@/assets/scheduling.svg";
 import sms from "@/assets/sms.svg";
 import Card from "@/components/ui/Card";
+import { useRef } from "react";
+import { useInView } from "framer-motion";
 
 const items: Omit<CardType, "imagePosition">[] = [
   {
@@ -37,6 +39,9 @@ const items: Omit<CardType, "imagePosition">[] = [
 ];
 
 export default function Services() {
+  const ref = useRef(null);
+  const isInView = useInView(ref, { once: true });
+
   return (
     <LandingSection
       id="services"
@@ -54,9 +59,20 @@ export default function Services() {
       <Box
         as="ul"
         className="space-y-6 lg:flex lg:flex-wrap lg:justify-center lg:gap-10 lg:space-y-0 lg:*:max-w-[22rem] lg:*:[flex-basis:_calc(33%_-_2.5rem)]"
+        ref={ref}
       >
-        {items.map((item) => (
-          <Card {...item} key={item.text} imagePosition="center" />
+        {items.map((item, idx) => (
+          <Card
+            {...item}
+            key={item.text}
+            imagePosition="center"
+            style={{
+              transform: isInView ? "none" : "translateX(-200px)",
+              opacity: isInView ? 1 : 0,
+              transition: "all 0.4s cubic-bezier(0.17, 0.55, 0.55, 1)",
+              transitionDelay: `${(idx + 1) * 0.3}s`,
+            }}
+          />
         ))}
       </Box>
     </LandingSection>

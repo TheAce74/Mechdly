@@ -2,8 +2,13 @@ import LandingSection from "@/components/layout/LandingSection";
 import { Box, Heading, Image, Text } from "@chakra-ui/react";
 import first from "@/assets/first.png";
 import Button from "@/components/ui/Button";
+import { useRef } from "react";
+import { useInView } from "framer-motion";
 
 export default function Hero() {
+  const ref = useRef(null);
+  const isInView = useInView(ref, { once: true });
+
   return (
     <LandingSection
       id="hero"
@@ -27,7 +32,16 @@ export default function Hero() {
         </Text>
         <Button>Get started now</Button>
       </Box>
-      <Image src={first} alt="" />
+      <Image
+        src={first}
+        alt=""
+        ref={ref}
+        style={{
+          transform: isInView ? "none" : "scale(0)",
+          opacity: isInView ? 1 : 0,
+          transition: "all 0.4s cubic-bezier(0.17, 0.55, 0.55, 1) 0.3s",
+        }}
+      />
     </LandingSection>
   );
 }
