@@ -26,6 +26,18 @@ const config: Config = {
       borderRadius: {
         pill: "100vmax",
       },
+      backgroundImage: {
+        "fade-circle-right":
+          "radial-gradient(circle 400px at 90% 45%, #ffd18244, transparent 70%)",
+        "fade-circle-left":
+          "radial-gradient(circle 400px at 0% 50%, #ffd18244, transparent 70%)",
+        "fade-circle-center":
+          "radial-gradient(circle 400px at 40% 55%, #ffd18244, transparent 70%)",
+        "fade-circle-both": `
+          radial-gradient(circle 400px at 90% 45%, #ffd18244, transparent 70%),
+          radial-gradient(circle 400px at 0% 70%, #ffd18244, transparent 70%)
+        `,
+      },
     },
   },
   plugins: [],

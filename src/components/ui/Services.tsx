@@ -38,7 +38,10 @@ const items: Omit<CardType, "imagePosition">[] = [
 
 export default function Services() {
   return (
-    <LandingSection id="services">
+    <LandingSection
+      id="services"
+      outerClass="bg-fade-circle-center bg-no-repeat"
+    >
       <Heading
         as="h2"
         fontWeight="regular"

@@ -24,7 +24,7 @@ export default function LandingSection({
       minHeight="50dvh"
       id={id}
       className={cn(
-        "bg-opacity-10 backdrop-blur-sm backdrop-filter",
+        "bg-opacity-10 backdrop-blur-lg backdrop-filter",
         outerClass,
       )}
     >

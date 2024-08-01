@@ -5,7 +5,11 @@ import Button from "@/components/ui/Button";
 
 export default function Availability() {
   return (
-    <LandingSection id="availability" grid>
+    <LandingSection
+      id="availability"
+      grid
+      outerClass="bg-fade-circle-left bg-no-repeat"
+    >
       <Box mb={12} className="ml-auto space-y-6 xl:max-w-[78%]">
         <Heading
           as="h2"

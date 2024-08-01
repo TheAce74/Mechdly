@@ -25,7 +25,10 @@ const items: Omit<CardType, "imagePosition">[] = [
 
 export default function Testimonials() {
   return (
-    <LandingSection id="testimonials">
+    <LandingSection
+      id="testimonials"
+      outerClass="bg-fade-circle-both bg-no-repeat"
+    >
       <Heading
         as="h2"
         fontWeight="regular"

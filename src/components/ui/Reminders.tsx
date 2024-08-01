@@ -5,7 +5,11 @@ import Button from "@/components/ui/Button";
 
 export default function Reminders() {
   return (
-    <LandingSection id="reminders" grid>
+    <LandingSection
+      id="reminders"
+      grid
+      outerClass="bg-fade-circle-right bg-no-repeat"
+    >
       <Box mb={12} className="space-y-6 xl:max-w-[78%]">
         <Heading
           as="h2"
