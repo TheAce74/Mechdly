@@ -1,6 +1,7 @@
 import Availability from "@/components/ui/Availability";
 import Header from "@/components/ui/Header";
 import Hero from "@/components/ui/Hero";
+import Reminders from "@/components/ui/Reminders";
 import { Container } from "@chakra-ui/react";
 
 function App() {
@@ -9,6 +10,7 @@ function App() {
       <Header />
       <Hero />
       <Availability />
+      <Reminders />
     </Container>
   );
 }

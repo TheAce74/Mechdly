@@ -6,7 +6,7 @@ import Button from "@/components/ui/Button";
 export default function Hero() {
   return (
     <LandingSection id="hero" grid>
-      <Box mb={8} className="space-y-4 xl:max-w-[78%]">
+      <Box mb={12} className="space-y-4 xl:max-w-[78%]">
         <Heading
           as="h1"
           className="!font-semibold xl:!text-6xl"

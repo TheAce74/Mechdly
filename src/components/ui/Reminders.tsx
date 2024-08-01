@@ -1,12 +1,12 @@
 import { Box, Heading, Image } from "@chakra-ui/react";
 import LandingSection from "../layout/LandingSection";
-import second from "@/assets/second.png";
+import third from "@/assets/third.png";
 import Button from "@/components/ui/Button";
 
-export default function Availability() {
+export default function Reminders() {
   return (
-    <LandingSection id="availability" grid>
-      <Box mb={12} className="ml-auto space-y-6 xl:max-w-[78%]">
+    <LandingSection id="reminders" grid>
+      <Box mb={12} className="space-y-6 xl:max-w-[78%]">
         <Heading
           as="h2"
           className="!font-semibold xl:!text-6xl"
@@ -14,11 +14,11 @@ export default function Availability() {
             lineHeight: "1.2 !important",
           }}
         >
-          Let your customers know what time is available in a day!
+          Send reminders, SMS and invoices to customers.
         </Heading>
         <Button>Setup now</Button>
       </Box>
-      <Image src={second} alt="" className="-order-1" />
+      <Image src={third} alt="" />
     </LandingSection>
   );
 }
