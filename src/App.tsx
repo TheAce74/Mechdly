@@ -3,6 +3,7 @@ import Header from "@/components/ui/Header";
 import Hero from "@/components/ui/Hero";
 import Reminders from "@/components/ui/Reminders";
 import Services from "@/components/ui/Services";
+import Testimonials from "@/components/ui/Testimonials";
 import { Container } from "@chakra-ui/react";
 
 function App() {
@@ -13,6 +14,7 @@ function App() {
       <Availability />
       <Reminders />
       <Services />
+      <Testimonials />
     </Container>
   );
 }

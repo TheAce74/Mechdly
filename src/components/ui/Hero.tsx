@@ -11,7 +11,7 @@ export default function Hero() {
           as="h1"
           className="!font-semibold xl:!text-6xl"
           sx={{
-            lineHeight: "1.2 !important",
+            lineHeight: "1.1 !important",
           }}
         >
           Schedule, Make Payments, & Send invoice to your customers.

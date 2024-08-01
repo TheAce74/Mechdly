@@ -2,13 +2,24 @@ import { CardType } from "@/lib/types";
 import { cn } from "@/lib/utils";
 import { Box, Heading, Image, Text } from "@chakra-ui/react";
 
-type CardProps = CardType;
+type CardProps = CardType & {
+  className?: string;
+};
 
-export default function Card({ image, imagePosition, text, title }: CardProps) {
+export default function Card({
+  image,
+  imagePosition,
+  text,
+  title,
+  className,
+}: CardProps) {
   return (
     <Box
       as="li"
-      className="glass rounded-lg border-2 border-primary-100 p-6 lg:p-10"
+      className={cn(
+        "glass rounded-lg border-2 border-primary-100 p-6 lg:p-10",
+        className,
+      )}
     >
       <Image
         src={image}

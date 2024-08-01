@@ -42,7 +42,7 @@ export default function Services() {
       <Heading
         as="h2"
         fontWeight="regular"
-        marginBottom={12}
+        marginBottom={16}
         textAlign="center"
         letterSpacing={3}
       >

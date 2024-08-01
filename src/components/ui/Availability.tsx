@@ -11,7 +11,7 @@ export default function Availability() {
           as="h2"
           className="!font-semibold xl:!text-6xl"
           sx={{
-            lineHeight: "1.2 !important",
+            lineHeight: "1.1 !important",
           }}
         >
           Let your customers know what time is available in a day!
