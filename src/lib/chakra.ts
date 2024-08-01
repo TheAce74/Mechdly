@@ -18,6 +18,7 @@ const colors = {
 
 const fonts = {
   body: "'Darker Grotesque', sans-serif",
+  heading: "'Darker Grotesque', sans-serif",
 };
 
 export const theme = extendTheme({ colors, fonts });
