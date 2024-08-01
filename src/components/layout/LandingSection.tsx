@@ -1,5 +1,5 @@
 import { cn } from "@/lib/utils";
-import { Box } from "@chakra-ui/react";
+import { As, Box } from "@chakra-ui/react";
 import { PropsWithChildren } from "react";
 
 type LandingSectionProps = PropsWithChildren & {
@@ -7,6 +7,7 @@ type LandingSectionProps = PropsWithChildren & {
   outerClass?: string;
   className?: string;
   grid?: boolean;
+  as?: As;
 };
 
 export default function LandingSection({
@@ -15,10 +16,11 @@ export default function LandingSection({
   className,
   outerClass,
   grid,
+  as,
 }: LandingSectionProps) {
   return (
     <Box
-      as="section"
+      as={as ? as : "section"}
       minHeight="50dvh"
       id={id}
       className={cn(

@@ -29,7 +29,7 @@ export default function Card({
           imagePosition === "center" ? "lg:mx-auto" : "lg:ml-auto",
         )}
       />
-      <Heading as="h3" fontSize="x-large" mt={2} mb={1}>
+      <Heading as="h3" fontSize="x-large" mt={2} mb={1} className="lg:!mb-3">
         {title}
       </Heading>
       <Text fontSize="large">{text}</Text>

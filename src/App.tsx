@@ -1,5 +1,6 @@
 import Availability from "@/components/ui/Availability";
 import Cta from "@/components/ui/Cta";
+import Footer from "@/components/ui/Footer";
 import Header from "@/components/ui/Header";
 import Hero from "@/components/ui/Hero";
 import Reminders from "@/components/ui/Reminders";
@@ -17,6 +18,7 @@ function App() {
       <Services />
       <Testimonials />
       <Cta />
+      <Footer />
     </Container>
   );
 }
