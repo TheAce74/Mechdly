@@ -1,8 +1,11 @@
+import Header from "@/components/ui/Header";
+import { Container } from "@chakra-ui/react";
+
 function App() {
   return (
-    <main>
-      <h1>App</h1>
-    </main>
+    <Container as="main" maxW={1900} p={0} className="">
+      <Header />
+    </Container>
   );
 }
 

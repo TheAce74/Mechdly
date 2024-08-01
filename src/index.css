@@ -6,4 +6,8 @@
   .trans-all {
     @apply transition-all duration-300;
   }
+
+  .flex-starter {
+    @apply flex items-center justify-between gap-4;
+  }
 }
